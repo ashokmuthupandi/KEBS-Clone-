@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+ }
+ 
+
+ .toolbarr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #79ba44;
+  margin-left: 80px;
+  border-bottom: 1px solid #e5e5e5;
+  height:40px;
+  font-size: 14px;
+  padding-top:15px;
+  padding-left: 5px;
+}
+
+.toolbarr-left {
+  flex: 1; /* Take up available space on the left */
+}
+
+.toolbarr-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color:#66615b;
+  margin-right: 350px;
+  height:22px;
+  width:22px;
+}
+.toolbarr-right img{
+  width:35px;
+  height:35px;
+}
+.expenses-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+#search-expenses {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  width: 650px; /* Adjust the width as needed */
+  margin-right: 10px;
+  margin-left: 350px;
+}
+#search-expenses:hover {
+  border-color:  #CF0001; 
+  border-width: 2px;/* Change border color on hover */
+}
+.expenses-button {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+
+ 
+ .expenses-text {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+ }
+ 
+ .expenses-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.expenses-image img {
+  width: 100%; /* Make the image fill its container */
+  max-width: 320px; /* Set a maximum width if needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+ 
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button button {
+  background-color: #CF0001;
+  color: white;
+  border: none;
+  padding: 0px 25px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  width: 123px; /* Set the width */
+  height: 30px;
+}
+

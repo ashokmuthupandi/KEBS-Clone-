@@ -1,0 +1,67 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9a9a9a;
+    margin-left: 80px;
+    border-bottom: 1px solid #e5e5e5;
+    height:50px;
+    font-size: 14px;
+  }
+  
+  .toolbar-left {
+    flex: 1; /* Take up available space on the left */
+  }
+  
+  .toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:#66615b;
+    margin-right: 350px;
+  }
+  .toolbar-right img{
+    width:37px;
+    height:37px;
+  }
+  .navbar {
+    display: flex;
+    margin:8px 0px;
+    Margin-left:100px;
+    gap:50px;
+    align-items: center;
+    color: #66615b; /* Text color for labels */
+    border-bottom: 1px solid #e5e5e5;
+    height:37px;
+  }
+  
+  .navbar label {
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+    padding: 10px 20px; /* Add padding to space out the labels */
+    font-size: 14px; /* Set the font size as needed */
+    font-weight: 400;
+  
+    /* Add more styles if needed */
+  }
+  .navbar label.active {
+    border-bottom: 2px solid #BF360C;
+    color: #000000DB;
+    position: relative;
+  }
+  
+  .navbar label.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #BF360C;
+  }
+  .approval-label.active {
+    color: red;
+  }
+  .toolbar label.active {
+    color: green;
+    /* Add any other styles you want for the active state */
+  }

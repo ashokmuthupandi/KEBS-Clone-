@@ -1,0 +1,360 @@
+/* Tsubmission.css */
+
+.Navbar-calender {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 85px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 40px;
+  flex: 1; /* Add this to make the Navbar-calender expand to fill available space */
+  margin-right: 0;
+
+}
+  
+  .navbar-calender-month {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Navbar-calender-icon,
+  .Navbar-calender-month-icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .Navbar-calender-icon:hover,
+  .Navbar-calender-month-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .Navbar-calender-text {
+    font-size: 14px;
+    color: #66651B;
+  }
+  
+  .Navbar-calender-month-text {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  
+  /* Styling for the month box */
+  .Navbar-calender-month-box {
+    position: absolute;
+    top: 150px;
+    left: 185px;
+    width: 296px;
+    height:300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .Navbar-calender-month-box ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  
+  .Navbar-calender-month-box-header {
+    padding: 10px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .Navbar-calender-month-box-list {
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .Navbar-calender-month-box-list-item {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+    color: #66651B;
+    width:63px;
+    height:36px;
+  }
+  
+  .Navbar-calender-month-box-list-item:hover {
+    background-color: #ccc;
+  }
+  
+  /* Show the month box when it's visible */
+  .Navbar-calender-month-box.visible {
+    display: block;
+  }
+  .Image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 0;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .circle1,
+  .circle2,
+  .circle3 {
+    width: 38px;
+    height: 27px;
+    margin-right: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .circle1 {
+    background-color: #20BF5B;
+  }
+  
+  .circle2 {
+    background-color: #EB3B5A;
+  }
+  
+  .circle3 {
+    background-color: #613beb;
+  }
+/* Tsheader.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  width:1140px;
+  height:42px;
+  margin-left: 120px;
+  padding: 4px 4px 8px 4px;
+  color:#66651B;
+  font-size: 14px;
+}
+/* Example CSS styles for input fields */
+.header-costcentre input,
+.header-location input {
+width: 184px; /* Set the width of the input fields */
+height: 16px;
+border: 1px solid #ccc; /* Add a border */
+border-radius: 5px; /* Add rounded corners */
+font-size: 14px; /* Adjust the font size */
+padding:12px 5px 8px 15px;
+}
+
+
+.header-costcentre,
+.header-location,
+.header-approvars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-approvars img {
+  max-width: 30px; /* Adjust the width as needed */
+  height: auto;
+}
+/* Style the input and the dropdown icon */
+.location-input-container {
+  position: relative;
+}
+
+.header-location-img {
+  position: absolute;
+  right: 10px; /* Adjust the position to your preference */
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%); /* Correct the vertical alignment */
+}
+.location-dropdown {
+  display: block;
+  width: 312px;
+  height: 256px;
+  border: 1px solid #ccc;
+  border-top: none; /* Hide the top border */
+  border-radius: 0 0 5px 5px; /* Rounded corners only at the bottom */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  position: absolute;
+  top: 200px; /* Position the dropdown below the input */
+  background-color: white; /* Background color for the dropdown */
+}
+.location-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.location-item:hover {
+  background-color: #f5f5f5; /* Highlight on hover */
+}
+.expenses-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+.expenses-button .icon-container {
+  position: relative;
+  text-align: center;
+}
+
+.expenses-button .icon-container svg {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  cursor: pointer;
+  color:#66615b;
+}
+
+.expenses-button .icon-container .tooltip {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #66651B;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.expenses-button .icon-container:hover .tooltip {
+  opacity: 1;
+}
+.weekmonth nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-left: 100px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weekmonth nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.weekmonth nav li {
+  background-color: #ffffff;
+  border: 1px solid #808080;
+  padding: 10px;
+  margin-left: 20px;
+  width: 218px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.weekanswer {
+  height: 28px;
+  background-color: #2c3a47;
+  margin-left: 100px;
+}
+
+.weekanswer nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.weekanswer nav li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+.weekpost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 5px 8px;
+  font-size: 14px;
+  color: #66615b;
+  margin-left: 80px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weekpost nav ul li {
+  display: inline-block;
+  padding: 5px 8px;
+  margin: 0 5px;
+  margin-left: 0px;
+  margin-right: 100px;
+}
+
+
+
+
+.forweek1answer {
+  display: flex;
+  align-items: center;
+}
+
+.forweek1answer li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.forweek1answer li:first-child {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.forweek1answer li:not(:first-child) {
+  flex: 1; 
+  margin-right: 10px;
+}
+
+.forweek1answer input {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 50px;
+  
+}
+/* Add this to your CSS */
+.forweek1answer ul li input.green {
+  background-color: #20BF6B; /* Green color */
+  border: 1px solid #20BF6B; /* Dark green border color */
+ 
+}
+
+.forweek1answer ul li input.red {
+  background-color: #D1D8E0; /* Red color */
+  border:1px solid #D1DEE0; /* Dark red border color */
+}
